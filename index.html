@@ -9,7 +9,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="img/mail.svg" alt="mail.svg"><span>Lets-Find</span></div>
+            <div class="logo">
+                <img src="img/mail.svg" alt="Mail Icon" aria-hidden="true">
+                <span>Lets-Find</span>
+            </div>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/index.html">About</a></li>
@@ -19,16 +22,16 @@
     </header>
     <main>
         <div class="container">
-            <h1>Enter your Mail Id</h1>
+            <h1>Enter your Email ID</h1>
             <form id="emailForm">
-                <input placeholder="Enter your email to validate" type="email" id="emailId" style="width: 20vw;" required>
+                <input type="email" id="emailId" placeholder="Enter your email to validate" required aria-label="Email Address">
                 <br><br>
                 <input id="submitBtn" class="btn" type="submit" value="Submit">
             </form>
         </div>
         <div class="container">
             <h2>Your Results</h2>
-            <div id="resultCont"></div>
+            <div id="resultCont" aria-live="polite"></div>
         </div>
     </main>
     <footer>Copyright | Reserved | checkmail.com</footer>
