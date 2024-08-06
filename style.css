@@ -35,6 +35,8 @@ nav {
     padding: 0 6px;
     align-items: center;
     justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
 }
 ul {
     display: flex;
